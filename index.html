@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Descubra cinema, teatro, música e exposições na Casa da Cultura César Oliveira.">
+  <meta name="theme-color" content="#101d2c">
+  <title>Casa da Cultura César Oliveira</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Casa da Cultura — início"><span class="brand-mark">C</span><span>CASA DA CULTURA<small>CÉSAR OLIVEIRA</small></span></a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Navegação principal"><a href="#agenda">Agenda</a><a href="#programacao">Programação</a><a href="#sobre">A Casa</a><a href="#visitar">Visitar</a><a class="nav-cta" href="#agenda">Explorar eventos ↗</a></nav>
+  </header>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-shade"></div><div class="hero-content">
+        <p class="eyebrow"><span></span> CULTURA QUE NOS LIGA</p>
+        <h1>Um lugar para<br>sentir <em>a cultura.</em></h1>
+        <p class="hero-copy">Histórias que nos inspiram. Encontros que nos aproximam. Descubra o que acontece na Casa da Cultura César Oliveira.</p>
+        <div class="hero-actions"><a class="button button-gold" href="#agenda">Ver agenda <span>↗</span></a><a class="text-link" href="#sobre">Conhecer a Casa <span>↓</span></a></div>
+      </div><div class="hero-note"><span>01 / CULTURA</span><span>ARTE · COMUNIDADE · INSPIRAÇÃO</span></div>
+    </section>
+    <section class="intro section-wrap" id="sobre"><div><p class="eyebrow dark">UM ESPAÇO DE TODOS</p><h2>A cultura acontece<br><em>quando nos encontramos.</em></h2></div><div class="intro-copy"><p>Um ponto de encontro para a criatividade, a descoberta e a partilha. Entre espetáculos, cinema, exposições e iniciativas locais, há sempre novas histórias para viver.</p><a class="under-link" href="#visitar">Conheça o espaço <span>→</span></a></div></section>
+    <section class="program section-wrap" id="programacao"><div class="section-heading"><div><p class="eyebrow dark">EXPLORE A CASA</p><h2>Há sempre algo <em>a acontecer.</em></h2></div><p>Da primeira fila à última página, encontre a sua próxima experiência cultural.</p></div>
+      <div class="program-grid">
+        <a class="program-card cinema" href="#agenda"><span class="card-index">01 / IMAGEM</span><span class="card-bottom"><span><small>NA GRANDE TELA</small><strong>Cinema</strong></span><span class="round-arrow">↗</span></span></a>
+        <a class="program-card stage" href="#agenda"><span class="card-index">02 / PALCO</span><span class="card-bottom"><span><small>AO VIVO</small><strong>Teatro & Música</strong></span><span class="round-arrow">↗</span></span></a>
+        <a class="program-card art" href="#agenda"><span class="card-index">03 / DESCOBERTA</span><span class="card-bottom"><span><small>NOVOS OLHARES</small><strong>Exposições</strong></span><span class="round-arrow">↗</span></span></a>
+      </div>
+    </section>
+    <section class="agenda-section" id="agenda"><div class="section-wrap"><div class="section-heading agenda-heading"><div><p class="eyebrow">MARQUE NA AGENDA</p><h2>Próximos <em>momentos.</em></h2></div><p>Escolha o seu próximo encontro com a cultura.</p></div>
+      <div class="filters" role="group" aria-label="Filtrar eventos"><button class="filter active" data-filter="todos">Todos</button><button class="filter" data-filter="cinema">Cinema</button><button class="filter" data-filter="musica">Música</button><button class="filter" data-filter="exposicao">Exposições</button></div>
+      <div class="event-list">
+        <article class="event" data-category="cinema"><div class="event-date"><span>AGENDA</span><strong>01</strong><span>A CONFIRMAR</span></div><div class="event-info"><span class="event-type">CINEMA</span><h3>Sessão de cinema</h3><p>Uma experiência de cinema para partilhar em comunidade.</p></div><a href="#visitar" class="event-link" aria-label="Mais informações sobre sessão de cinema">↗</a></article>
+        <article class="event" data-category="musica"><div class="event-date"><span>AGENDA</span><strong>02</strong><span>A CONFIRMAR</span></div><div class="event-info"><span class="event-type">MÚSICA</span><h3>Encontro musical</h3><p>Uma noite dedicada aos sons, aos talentos e à descoberta.</p></div><a href="#visitar" class="event-link" aria-label="Mais informações sobre encontro musical">↗</a></article>
+        <article class="event" data-category="exposicao"><div class="event-date"><span>AGENDA</span><strong>03</strong><span>A CONFIRMAR</span></div><div class="event-info"><span class="event-type">EXPOSIÇÃO</span><h3>Olhares em exposição</h3><p>Arte e criatividade para ver com tempo e novos olhos.</p></div><a href="#visitar" class="event-link" aria-label="Mais informações sobre exposição">↗</a></article>
+      </div><p class="editorial-note">Nota: os eventos apresentados são exemplos de demonstração. Confirme a programação oficial antes de publicar.</p>
+    </div></section>
+    <section class="visit section-wrap" id="visitar"><div class="visit-art"><div class="visit-stamp">CULTURA<br>PARA TODOS<span>✳</span></div></div><div class="visit-copy"><p class="eyebrow dark">PLANEIE A SUA VISITA</p><h2>A porta está<br><em>aberta.</em></h2><p>Venha descobrir um espaço de cultura, encontro e participação. Consulte os canais oficiais para confirmar horários, acessibilidade e programação.</p><a class="button button-dark" href="https://kardoslav.wixsite.com/casadacultura-copy" target="_blank" rel="noreferrer">Site atual da Casa <span>↗</span></a></div></section>
+  </main>
+  <footer class="footer"><a class="brand footer-brand" href="#inicio"><span class="brand-mark">C</span><span>CASA DA CULTURA<small>CÉSAR OLIVEIRA</small></span></a><p>Cultura que nos liga.</p><a href="#inicio" class="back-top">Voltar ao topo ↑</a><div class="footer-bottom"><span>© <span id="year"></span> Casa da Cultura César Oliveira</span><span>ARTE · COMUNIDADE · INSPIRAÇÃO</span></div></footer>
+</body></html>
