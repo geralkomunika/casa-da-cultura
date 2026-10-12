@@ -103,3 +103,53 @@ body{background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;l
  .spaces-story,.contact-layout{grid-template-columns:1fr;gap:25px}.spaces-mosaic{grid-template-rows:220px 220px}.mosaic-note{padding:18px}.mosaic-note h2{font-size:28px}.values-grid{grid-template-columns:1fr;gap:4px}.values-grid article{padding:17px 0}.contact-card{padding:5px 18px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+
+/* Identidade visual renovada — inspirada em portais culturais contemporâneos, sem replicar o CAA */
+:root{--paper:#f7f7f4;--white:#fff;--ink:#202126;--muted:#686870;--line:#e2e2dd;--violet:#3045e8;--lime:#dfff67;--coral:#dfe3ff;--pad:clamp(22px,6.2vw,96px)}
+body{background:var(--paper);color:var(--ink)}
+.announcement{background:var(--ink);color:#fff}
+.announcement b,.brand-icon span,.underlink span,.pill-light{color:var(--violet)}
+.header{background:rgba(247,247,244,.97);backdrop-filter:blur(12px);border-bottom-color:#e5e5e0}
+.nav a:after{background:var(--violet)}
+.nav-ticket{background:var(--violet);border-color:var(--violet);color:#fff;font-family:'DM Sans',sans-serif;font-weight:700}
+.nav-ticket:hover{background:var(--ink);border-color:var(--ink)}
+.dot{background:var(--violet)}
+.pill{border-radius:3px}
+.pill-dark{background:var(--violet);color:#fff}
+.pill-dark:hover{background:var(--ink)}
+.page-hero{background:#e6e9ff}
+.page-hero h1 em,.spaces-story h2 em,.contact-layout h2 em{color:var(--violet)}
+.page-hero-shape{color:var(--violet);opacity:.85}
+.page-hero-green{background:#e7f0bd}
+.page-hero-green .page-hero-shape{color:var(--violet)}
+.page-hero-coral{background:#e6e9ff}
+.program-list{background:#fff}
+.program-row{grid-template-columns:minmax(130px,200px) 1fr 36px;gap:clamp(18px,4vw,42px);padding:28px 0}
+.program-row h2{font-family:'Space Grotesk',sans-serif;letter-spacing:-.05em}
+.row-number,.program-row .row-number{color:var(--violet)}
+.program-row-image{border-radius:2px}
+.program-row:hover .row-symbol{color:var(--violet)}
+.notice{background:#f0f1ff;border-left:3px solid var(--violet)}
+.closing{background:#e7f0bd}
+.closing h2 em{color:var(--violet)}
+.spaces-story{background:#fff}
+.spaces-story h2,.contact-layout h2{font-family:'Space Grotesk',sans-serif;letter-spacing:-.065em}
+.spaces-mosaic{gap:12px;background:var(--paper)}
+.mosaic-note{background:#e7f0bd}
+.mosaic-violet{background:var(--violet)}
+.values{background:#fff}
+.values-grid article{border-top-color:var(--line)}
+.values-grid article>span{color:var(--violet)}
+.contact-layout{background:#fff}
+.contact-card{background:#f7f7f4;border-color:var(--line)}
+.contact-item{border-bottom-color:var(--line)}
+.contact-item>span{color:var(--violet)}
+.contact-caveat{background:#e6e9ff;color:#555}
+.footer{background:var(--ink)}
+.footer .brand-icon span{color:var(--lime)}
+.footer-links a:hover,.footer-bottom a:hover{color:var(--lime)}
+@media(max-width:700px){
+ .program-row{grid-template-columns:88px 1fr 20px;gap:14px;padding:19px 0}
+ .program-row-image{height:95px}
+ .page-hero{padding-top:58px;padding-bottom:60px}
+}
