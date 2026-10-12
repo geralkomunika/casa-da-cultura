@@ -1,78 +1,112 @@
 <!doctype html>
 <html lang="pt-PT">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Casa da Cultura César Oliveira — programação cultural, espaços e comunidade.">
-<meta name="theme-color" content="#f8f8f5">
-<title>Casa da Cultura César Oliveira</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Casa da Cultura César Oliveira — programação cultural, artes e comunidade.">
+<meta name="theme-color" content="#f7f7f4"><title>Casa da Cultura César Oliveira</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<script src="script.js" defer></script>
+<link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
 <style>
-.simple-home{background:#f8f8f5}.simple-hero{display:grid;grid-template-columns:1.05fr .95fr;min-height:520px;border-bottom:1px solid var(--line)}.simple-hero-copy{padding:clamp(55px,8vw,100px) 30px 45px var(--pad);display:flex;flex-direction:column;align-items:flex-start}.simple-kicker{font-size:10px;font-weight:600;letter-spacing:1.3px;color:#666;display:flex;align-items:center;gap:9px;margin:0 0 22px}.simple-kicker span{width:8px;height:8px;background:var(--violet);border-radius:50%}.simple-hero h1{font:600 clamp(55px,7.4vw,100px)/.94 'Space Grotesk',sans-serif;letter-spacing:-.075em;margin:0 0 25px}.simple-hero h1 em,.simple-visit h2 em{font-style:normal;color:var(--violet)}.simple-intro{max-width:410px;font-size:15px;line-height:1.8;color:#626268;margin:0 0 28px}.simple-actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap}.simple-button{display:inline-flex;align-items:center;gap:28px;padding:15px 18px;background:var(--ink);color:white;font-size:12px;font-weight:600;border-radius:3px;transition:background .2s,transform .2s}.simple-button:hover{background:var(--violet);transform:translateY(-2px)}.simple-button span{font-size:16px}.simple-text-link{font-size:12px;font-weight:600;border-bottom:1px solid var(--violet);padding-bottom:5px}.simple-note{font-size:9px;letter-spacing:1.3px;color:#777;margin-top:auto;padding-top:35px}.simple-hero-visual{position:relative;min-height:500px;overflow:hidden;background:#e8eaff}.simple-orb{position:absolute;width:min(65%,390px);aspect-ratio:1;border-radius:50%;background:var(--violet);top:12%;left:15%}.simple-photo{position:absolute;inset:15% 13% 12% 23%;background:url('https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=1000&q=85') center/cover;filter:grayscale(1);mix-blend-mode:screen;clip-path:polygon(0 0,100% 8%,88% 100%,8% 88%)}.simple-visual-word{position:absolute;right:6%;top:8%;font:700 clamp(24px,3vw,43px)/.9 'Space Grotesk',sans-serif;letter-spacing:-.06em}.simple-visual-mark{position:absolute;left:7%;bottom:7%;font-size:clamp(48px,7vw,86px);color:var(--lime)}.simple-explore{padding:clamp(60px,8vw,100px) var(--pad);background:white}.simple-section-head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:30px}.simple-section-head .simple-kicker{margin-bottom:12px}.simple-section-head h2,.simple-programme h2{font:600 clamp(36px,5vw,60px)/1 'Space Grotesk',sans-serif;letter-spacing:-.07em;margin:0}.simple-section-head>p{font-size:13px;line-height:1.8;color:var(--muted);max-width:290px;margin:0 0 3px}.simple-categories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 30px}.simple-categories>a{display:grid;grid-template-columns:52px 1fr 24px;align-items:center;gap:16px;padding:21px 0;border-top:1px solid var(--line);transition:color .2s}.simple-categories>a:hover{color:var(--violet)}.simple-category-icon{width:48px;height:48px;display:grid;place-items:center;background:#f0f0ff;color:var(--violet);font-size:25px;border-radius:4px}.simple-categories strong{display:block;font:600 20px 'Space Grotesk',sans-serif}.simple-categories small{display:block;color:var(--muted);font-size:11px;margin-top:5px}.simple-categories>a>b{font-size:18px;font-weight:400}.simple-visit{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:40px;padding:clamp(55px,7vw,90px) var(--pad);background:var(--lime)}.simple-visit .simple-kicker{color:#555}.simple-visit h2{font:600 clamp(38px,5.5vw,68px)/.98 'Space Grotesk',sans-serif;letter-spacing:-.075em;margin:0}.simple-visit>div:last-child>p{max-width:380px;font-size:13px;line-height:1.9;color:#505047;margin:0 0 22px}.simple-programme{display:flex;justify-content:space-between;align-items:center;gap:35px;padding:clamp(60px,8vw,100px) var(--pad)}.simple-programme .simple-kicker{margin-bottom:14px}.simple-programme-link{width:min(390px,45%);display:flex;justify-content:space-between;align-items:center;gap:20px;border-block:1px solid var(--ink);padding:22px 0;font-size:13px;line-height:1.6;transition:color .2s}.simple-programme-link:hover{color:var(--violet)}.simple-programme-link b{font-size:23px;font-weight:400}.simple-footer{padding:30px var(--pad) 0;background:var(--ink);color:white;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:22px}.simple-footer .brand-icon{color:white}.simple-footer>p{font-size:12px;color:#c5c5cc;margin:0}.simple-footer-links{grid-column:1/-1;display:flex;gap:25px;flex-wrap:wrap;padding:22px 0;border-bottom:1px solid #ffffff26}.simple-footer-links a{font-size:11px;color:#ededf0}.simple-footer-links a:hover{color:var(--lime)}.simple-footer-bottom{grid-column:1/-1;display:flex;justify-content:space-between;gap:15px;padding:0 0 18px;color:#b9b9c1;font-size:9px}.simple-footer-bottom a{color:white}
-@media(max-width:700px){.simple-hero{grid-template-columns:1fr}.simple-hero-copy{padding:52px 22px 34px}.simple-hero h1{font-size:clamp(54px,13vw,82px)}.simple-intro{font-size:13px}.simple-note{padding-top:30px}.simple-hero-visual{min-height:330px}.simple-orb{width:245px;top:9%;left:18%}.simple-photo{inset:12% 12% 12% 19%}.simple-visual-word{font-size:31px}.simple-explore{padding:60px 22px}.simple-section-head{display:block}.simple-section-head h2{font-size:43px}.simple-section-head>p{margin-top:14px}.simple-categories{grid-template-columns:1fr}.simple-categories>a{grid-template-columns:48px 1fr 20px;padding:17px 0;gap:13px}.simple-categories strong{font-size:19px}.simple-visit{grid-template-columns:1fr;gap:23px;padding:54px 22px}.simple-visit h2{font-size:clamp(39px,10vw,54px)}.simple-programme{display:block;padding:58px 22px}.simple-programme h2{font-size:43px}.simple-programme-link{width:100%;margin-top:26px}.simple-footer{grid-template-columns:1fr;padding:26px 22px 0;gap:16px}.simple-footer>p{grid-column:1/-1}.simple-footer-links{gap:17px}.simple-footer-bottom{flex-direction:column}}
+.cc-home{--cc-blue:#3045e8;--cc-ink:#202126;--cc-paper:#f7f7f4;--cc-lime:#dfff67;background:var(--cc-paper);color:var(--cc-ink)}
+.cc-home .header{background:rgba(247,247,244,.96);height:78px}
+.cc-home .nav-ticket{background:var(--cc-blue);border-color:var(--cc-blue);color:white;font:600 11px 'DM Sans',sans-serif;padding:13px 17px}
+.cc-home .nav-ticket:hover{background:var(--cc-ink)}
+.cc-home .brand-icon span{color:var(--cc-blue)}
+.cc-hero{display:grid;grid-template-columns:1fr .82fr;min-height:490px;background:#f0f0eb}
+.cc-hero-copy{padding:clamp(48px,7vw,92px) 30px 42px var(--pad);display:flex;align-items:flex-start;flex-direction:column}
+.cc-eyebrow{font-size:10px;letter-spacing:1.3px;font-weight:700;color:#666;margin:0 0 25px;display:flex;align-items:center;gap:9px}
+.cc-eyebrow:before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--cc-blue)}
+.cc-hero h1{font:600 clamp(52px,7.1vw,94px)/.94 'Space Grotesk',sans-serif;letter-spacing:-.08em;margin:0 0 22px}
+.cc-hero h1 span{color:var(--cc-blue)}
+.cc-hero-copy>p:not(.cc-eyebrow){font-size:15px;line-height:1.8;color:#606168;max-width:430px;margin:0 0 27px}
+.cc-hero-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.cc-main-btn{display:inline-flex;gap:28px;align-items:center;background:var(--cc-blue);color:white;padding:15px 18px;border-radius:3px;font-size:12px;font-weight:700;transition:background .2s}
+.cc-main-btn:hover{background:var(--cc-ink)}
+.cc-main-btn span{font-size:17px}
+.cc-secondary-link{font-size:12px;font-weight:700;border-bottom:1px solid #b7b7bb;padding-bottom:6px}
+.cc-hero-art{position:relative;overflow:hidden;background:#dfe3ff;min-height:490px}
+.cc-hero-art:before{content:"";position:absolute;width:70%;aspect-ratio:1;background:var(--cc-blue);border-radius:50%;top:11%;left:13%}
+.cc-art-image{position:absolute;inset:15% 14% 12% 22%;background:url('https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=1000&q=85') center/cover;filter:grayscale(1);mix-blend-mode:screen;clip-path:polygon(0 0,100% 7%,89% 100%,8% 88%)}
+.cc-art-tag{position:absolute;top:7%;right:6%;font:700 clamp(22px,3vw,39px)/.9 'Space Grotesk',sans-serif;letter-spacing:-.06em}
+.cc-art-star{position:absolute;left:6%;bottom:5%;font-size:clamp(50px,7vw,80px);color:var(--cc-lime)}
+.cc-art-index{position:absolute;top:18px;left:20px;font-size:9px;letter-spacing:1px;font-weight:700}
+.cc-shortcuts{padding:0 var(--pad);display:grid;grid-template-columns:repeat(3,1fr);background:white;border-bottom:1px solid #e6e6e1}
+.cc-shortcut{padding:22px 20px 22px 0;display:flex;align-items:center;justify-content:space-between;gap:14px;border-right:1px solid #e6e6e1;margin-right:22px}
+.cc-shortcut:last-child{border:0;margin-right:0}
+.cc-shortcut small{display:block;font-size:9px;font-weight:700;letter-spacing:1px;color:#777;margin-bottom:6px}
+.cc-shortcut strong{font:600 19px 'Space Grotesk',sans-serif;letter-spacing:-.5px}
+.cc-shortcut b{font-size:19px;color:var(--cc-blue);font-weight:400}
+.cc-agenda{padding:clamp(65px,8vw,100px) var(--pad)}
+.cc-section-top{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:30px}
+.cc-section-top small{display:block;color:var(--cc-blue);font-size:10px;letter-spacing:1.3px;font-weight:700;margin-bottom:12px}
+.cc-section-top h2,.cc-about h2{font:600 clamp(36px,5vw,59px)/1 'Space Grotesk',sans-serif;letter-spacing:-.075em;margin:0}
+.cc-section-top>p{max-width:310px;font-size:12px;line-height:1.8;color:#686870;margin:0 0 3px}
+.cc-agenda-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.cc-agenda-card{min-width:0}
+.cc-agenda-img{height:clamp(160px,21vw,260px);background-size:cover;background-position:center;position:relative;overflow:hidden}
+.cc-agenda-img:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#15151b24,transparent 45%)}
+.cc-img-film{background-image:url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=800&q=80')}
+.cc-img-art{background-image:url('https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=800&q=80')}
+.cc-img-stage{background-image:url('https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=800&q=80')}
+.cc-card-type{display:flex;justify-content:space-between;gap:8px;font-size:9px;letter-spacing:.7px;font-weight:700;color:var(--cc-blue);margin-top:17px}
+.cc-agenda-card h3{font:600 clamp(20px,2.4vw,26px)/1.1 'Space Grotesk',sans-serif;letter-spacing:-.055em;margin:9px 0}
+.cc-agenda-card p{font-size:11px;line-height:1.7;color:#686870;margin:0 0 13px}
+.cc-agenda-card>a{display:inline-flex;gap:18px;align-items:center;font-size:11px;font-weight:700;border-bottom:1px solid #c6c6cc;padding-bottom:7px}
+.cc-agenda-card>a span{color:var(--cc-blue);font-size:15px}
+.cc-agenda-note{font-size:10px;color:#777;margin-top:24px;line-height:1.7}
+.cc-about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;background:#e6e9ff;padding:clamp(55px,7vw,90px) var(--pad)}
+.cc-about h2 span{color:var(--cc-blue)}
+.cc-about-copy p{font-size:13px;line-height:1.9;color:#5d5e68;max-width:430px;margin:0 0 23px}
+.cc-about .cc-main-btn{background:var(--cc-ink)}
+.cc-about .cc-main-btn:hover{background:var(--cc-blue)}
+.cc-bottom-cta{padding:clamp(55px,7vw,80px) var(--pad);display:flex;justify-content:space-between;align-items:center;gap:25px}
+.cc-bottom-cta h2{font:600 clamp(30px,4.3vw,50px)/1.05 'Space Grotesk',sans-serif;letter-spacing:-.07em;margin:0}
+.cc-bottom-cta h2 span{color:var(--cc-blue)}
+.cc-footer{background:var(--cc-ink);color:white;padding:28px var(--pad) 0;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:20px}
+.cc-footer .brand-icon{color:white}.cc-footer .brand-icon span{color:var(--cc-lime)}
+.cc-footer>p{font-size:12px;color:#c6c6cf;margin:0}
+.cc-footer-links{grid-column:1/-1;display:flex;gap:23px;flex-wrap:wrap;padding:20px 0;border-bottom:1px solid #ffffff25}
+.cc-footer-links a{font-size:11px;color:#eee}
+.cc-footer-links a:hover{color:var(--cc-lime)}
+.cc-footer-bottom{grid-column:1/-1;display:flex;justify-content:space-between;gap:15px;padding-bottom:18px;font-size:9px;color:#b9b9c1}
+.cc-footer-bottom a{color:white}
+@media(max-width:700px){
+.cc-home .header{height:70px;padding:0 20px}.cc-hero{grid-template-columns:1fr}.cc-hero-copy{padding:48px 22px 38px}.cc-hero h1{font-size:clamp(51px,12vw,76px)}.cc-hero-copy>p:not(.cc-eyebrow){font-size:13px}.cc-hero-art{min-height:320px}.cc-hero-art:before{width:68%;top:10%;left:18%}.cc-art-image{inset:13% 12% 12% 20%}.cc-art-tag{font-size:30px}
+.cc-shortcuts{grid-template-columns:1fr;padding:0 22px}.cc-shortcut{margin:0;padding:17px 0;border-right:0;border-bottom:1px solid #e6e6e1}.cc-shortcut:last-child{border-bottom:0}
+.cc-agenda{padding:58px 22px}.cc-section-top{display:block}.cc-section-top h2{font-size:43px}.cc-section-top>p{margin-top:14px}.cc-agenda-grid{grid-template-columns:1fr;gap:28px}.cc-agenda-img{height:230px}.cc-agenda-card h3{font-size:25px}
+.cc-about{grid-template-columns:1fr;gap:20px;padding:52px 22px}.cc-about h2{font-size:43px}.cc-bottom-cta{padding:52px 22px;align-items:flex-start;flex-direction:column}.cc-footer{grid-template-columns:1fr;padding:26px 22px 0;gap:16px}.cc-footer>p{grid-column:1/-1}.cc-footer-links{gap:16px}.cc-footer-bottom{flex-direction:column}
+}
 </style>
 </head>
-<body class="home-v2 simple-home">
+<body class="cc-home">
 <header class="header">
-  <a class="brand" href="index.html" aria-label="Casa da Cultura — início">
-    <span class="brand-icon">c<span>✳</span></span>
-    <span class="brand-text">CASA DA<br>CULTURA <i>CÉSAR OLIVEIRA</i></span>
-  </a>
-  <button class="menu-toggle" aria-expanded="false" aria-label="Abrir menu">☰</button>
-  <nav class="nav" aria-label="Navegação principal">
-    <a class="active" href="index.html">Início</a>
-    <a href="programacao.html">Programação</a>
-    <a href="espacos.html">A Casa</a>
-    <a href="contactos.html">Visitar</a>
-  </nav>
-  <a class="nav-ticket" href="programacao.html">EXPLORAR ↗</a>
+<a class="brand" href="index.html" aria-label="Casa da Cultura — início"><span class="brand-icon">c<span>✳</span></span><span class="brand-text">CASA DA<br>CULTURA <i>CÉSAR OLIVEIRA</i></span></a>
+<button class="menu-toggle" aria-expanded="false" aria-label="Abrir menu">☰</button>
+<nav class="nav" aria-label="Navegação principal"><a class="active" href="index.html">Início</a><a href="programacao.html">Programação</a><a href="espacos.html">A Casa</a><a href="contactos.html">Visitar</a></nav>
+<a class="nav-ticket" href="programacao.html">VER PROGRAMAÇÃO ↗</a>
 </header>
 <main>
-  <section class="simple-hero" id="inicio">
-    <div class="simple-hero-copy">
-      <p class="simple-kicker"><span></span> CULTURA, ENCONTRO, COMUNIDADE</p>
-      <h1>Há sempre<br>algo <em>a descobrir.</em></h1>
-      <p class="simple-intro">A Casa da Cultura César Oliveira é um espaço para descobrir arte, partilhar ideias e viver a cultura em conjunto.</p>
-      <div class="simple-actions">
-        <a class="simple-button" href="programacao.html">Ver programação <span>↗</span></a>
-        <a class="simple-text-link" href="espacos.html">Conhecer a Casa</a>
-      </div>
-      <p class="simple-note">UM ESPAÇO ABERTO A TODOS</p>
-    </div>
-    <div class="simple-hero-visual" role="img" aria-label="Composição artística abstrata com cores vivas">
-      <div class="simple-orb"></div><div class="simple-photo"></div><span class="simple-visual-word">CULTURA<br>EM ABERTO.</span><span class="simple-visual-mark">✳</span>
-    </div>
-  </section>
-  <section class="simple-explore">
-    <div class="simple-section-head">
-      <div><p class="simple-kicker">DESCOBRE</p><h2>O que te inspira?</h2></div>
-      <p>Explora as áreas artísticas e encontra a tua próxima experiência.</p>
-    </div>
-    <div class="simple-categories">
-      <a href="programacao.html#cinema"><span class="simple-category-icon">▻</span><span><strong>Cinema</strong><small>Filmes, histórias e conversa</small></span><b>↗</b></a>
-      <a href="programacao.html#exposicoes"><span class="simple-category-icon">▧</span><span><strong>Artes visuais</strong><small>Exposições e novos olhares</small></span><b>↗</b></a>
-      <a href="programacao.html#teatro"><span class="simple-category-icon">◉</span><span><strong>Teatro & palco</strong><small>Espetáculos e encontros ao vivo</small></span><b>↗</b></a>
-      <a href="programacao.html#musica"><span class="simple-category-icon">♫</span><span><strong>Música & dança</strong><small>Som, movimento e expressão</small></span><b>↗</b></a>
-    </div>
-  </section>
-  <section class="simple-visit">
-    <div><p class="simple-kicker">A CASA É TUA</p><h2>A cultura acontece<br>quando <em>participamos.</em></h2></div>
-    <div><p>Vem conhecer o espaço, acompanha as novidades e descobre como fazer parte da comunidade.</p><a class="simple-button simple-button-light" href="contactos.html">Planear uma visita <span>↗</span></a></div>
-  </section>
-  <section class="simple-programme">
-    <div><p class="simple-kicker">FICA A PAR</p><h2>O próximo passo<br>começa aqui.</h2></div>
-    <a class="simple-programme-link" href="programacao.html"><span>Consulta as áreas e novidades da programação</span><b>↗</b></a>
-  </section>
+<section class="cc-hero">
+<div class="cc-hero-copy"><p class="cc-eyebrow">CASA DA CULTURA CÉSAR OLIVEIRA</p><h1>Um lugar para<br><span>viver a cultura.</span></h1><p>Descobre propostas artísticas, acompanha a programação e encontra novas razões para estar junto.</p><div class="cc-hero-actions"><a class="cc-main-btn" href="programacao.html">Explorar programação <span>↗</span></a><a class="cc-secondary-link" href="espacos.html">Conhecer a Casa</a></div></div>
+<div class="cc-hero-art" role="img" aria-label="Imagem artística abstrata"><span class="cc-art-index">CULTURA · COMUNIDADE · CRIATIVIDADE</span><div class="cc-art-image"></div><span class="cc-art-tag">NOVOS<br>OLHARES.</span><span class="cc-art-star">✳</span></div>
+</section>
+<nav class="cc-shortcuts" aria-label="Acesso rápido">
+<a class="cc-shortcut" href="programacao.html"><span><small>DESCOBRE</small><strong>Programação</strong></span><b>↗</b></a>
+<a class="cc-shortcut" href="espacos.html"><span><small>CONHECE</small><strong>A Casa</strong></span><b>↗</b></a>
+<a class="cc-shortcut" href="contactos.html"><span><small>PLANEIA</small><strong>A tua visita</strong></span><b>↗</b></a>
+</nav>
+<section class="cc-agenda">
+<div class="cc-section-top"><div><small>EXPLORA AS ARTES</small><h2>O que te traz cá?</h2></div><p>Da imagem ao palco, há muitas formas de descobrir algo novo.</p></div>
+<div class="cc-agenda-grid">
+<article class="cc-agenda-card"><div class="cc-agenda-img cc-img-film"></div><div class="cc-card-type"><span>CINEMA</span><span>01 / 03</span></div><h3>Histórias no grande ecrã</h3><p>Filmes que abrem conversas e nos mostram outras perspetivas.</p><a href="programacao.html#cinema">Explorar cinema <span>↗</span></a></article>
+<article class="cc-agenda-card"><div class="cc-agenda-img cc-img-art"></div><div class="cc-card-type"><span>ARTES VISUAIS</span><span>02 / 03</span></div><h3>Novos pontos de vista</h3><p>Exposições, imagens e ideias para olhar o mundo de outra maneira.</p><a href="programacao.html#exposicoes">Explorar exposições <span>↗</span></a></article>
+<article class="cc-agenda-card"><div class="cc-agenda-img cc-img-stage"></div><div class="cc-card-type"><span>PALCO</span><span>03 / 03</span></div><h3>Momentos ao vivo</h3><p>Teatro, música e encontros que ganham vida quando estamos juntos.</p><a href="programacao.html#teatro">Explorar espetáculos <span>↗</span></a></article>
+</div>
+<p class="cc-agenda-note">Estas áreas são sugestões de exploração, não eventos confirmados. Consulta a página de programação para informações atualizadas.</p>
+</section>
+<section class="cc-about"><div><p class="cc-eyebrow">A CASA É DE TODOS</p><h2>Mais do que um espaço.<br><span>Um ponto de encontro.</span></h2></div><div class="cc-about-copy"><p>Um lugar onde a cultura aproxima pessoas, dá espaço a novas ideias e convida a comunidade a participar.</p><a class="cc-main-btn" href="espacos.html">Descobrir a Casa <span>↗</span></a></div></section>
+<section class="cc-bottom-cta"><h2>Vens descobrir<br><span>por ti?</span></h2><a class="cc-main-btn" href="contactos.html">Informações para visitar <span>↗</span></a></section>
 </main>
-<footer class="simple-footer">
-  <a class="brand" href="index.html"><span class="brand-icon">c<span>✳</span></span><span class="brand-text">CASA DA<br>CULTURA <i>CÉSAR OLIVEIRA</i></span></a>
-  <p>Um lugar para descobrir, criar e partilhar.</p>
-  <div class="simple-footer-links"><a href="programacao.html">Programação</a><a href="espacos.html">A Casa</a><a href="contactos.html">Visitar</a><a href="https://kardoslav.wixsite.com/casadacultura-copy" target="_blank" rel="noreferrer">Site atual ↗</a></div>
-  <div class="simple-footer-bottom"><span>© <span id="year"></span> Casa da Cultura César Oliveira</span><a href="#inicio">Voltar ao topo ↑</a></div>
-</footer>
-</body>
-</html>
+<footer class="cc-footer"><a class="brand" href="index.html"><span class="brand-icon">c<span>✳</span></span><span class="brand-text">CASA DA<br>CULTURA <i>CÉSAR OLIVEIRA</i></span></a><p>Cultura para descobrir e partilhar.</p><div class="cc-footer-links"><a href="programacao.html">Programação</a><a href="espacos.html">A Casa</a><a href="contactos.html">Visitar</a><a href="https://kardoslav.wixsite.com/casadacultura-copy" target="_blank" rel="noreferrer">Site atual ↗</a></div><div class="cc-footer-bottom"><span>© <span id="year"></span> Casa da Cultura César Oliveira</span><a href="#inicio">Voltar ao topo ↑</a></div></footer>
+</body></html>
