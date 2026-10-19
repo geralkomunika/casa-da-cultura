@@ -28,3 +28,21 @@ Abre `index.html` num navegador. Não é necessário instalar dependências nem 
 
 ## Tecnologias
 HTML5 semântico · CSS responsivo · JavaScript simples · Google Fonts · fotografias remotas.
+
+
+## Programação e painel de administração
+
+A aplicação Next.js usa a pasta `app/` e o `package.json` na raiz. No Vercel, define **Root Directory** como `./` e o framework como **Next.js**.
+
+### Configuração de produção
+
+No Supabase, executa o ficheiro `supabase/schema.sql` no SQL Editor. Além das tabelas de newsletter e contacto, este script cria `events` para a programação.
+
+No Vercel → Settings → Environment Variables, configura:
+- `NEXT_PUBLIC_SUPABASE_URL`: URL do projeto Supabase.
+- `SUPABASE_SERVICE_ROLE_KEY`: chave secreta de servidor; nunca a publiques no cliente.
+- `ADMIN_PASSWORD`: palavra-passe forte e única para proteger o painel em `/admin`.
+
+Depois de criar ou alterar estas variáveis, faz redeploy. Abre `/admin` para criar eventos, definir datas e publicar/retirar eventos. A programação pública permite pesquisa e filtro por categoria. Os botões de bilheteira abrem a página oficial da Ticketline.
+
+**Importante:** usa uma palavra-passe longa, não a partilhes e configura-a antes de disponibilizar `/admin` publicamente. Antes do lançamento, testa a autenticação, criação/edição/apagamento de eventos e os formulários com as credenciais reais do Supabase.
